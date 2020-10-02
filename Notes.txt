@@ -13,7 +13,7 @@ Tables -
 		3.Login - created by cust - after relogin 
 				custId as fk, uname is pk, pwd, lastlogin
 
-		4.Transactions-
+		4.Transactions- created by customers
 				(trId, AccNo) is pk, amt, date, time ,type, remarks(as status)
 
 

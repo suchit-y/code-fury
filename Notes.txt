@@ -46,7 +46,7 @@ Customer-
 
 		Becomes Existing customer if he creates acc.
 
-		Should maintain min balnace always.
+		Should maintain min balanace always.
 
 
 All exceptions should be handled respectivly,unhandled exceptions to be logged.

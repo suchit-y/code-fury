@@ -1,0 +1,65 @@
+Notes
+
+Bank Application
+
+
+Tables -
+		1.Customer - created by himself
+				custId is pk , cname, pan, dob, pmob, pemail, amob, aemail,
+
+		2.Acc - created by emp
+				(custId, accNo) is pk, dateOfOpening, accType, balance, minBalance
+
+		3.Login - created by cust - after relogin 
+				custId as fk, uname is pk, pwd, lastlogin
+
+		4.Transactions-
+				(trId, AccNo) is pk, amt, date, time ,type, remarks(as status)
+
+
+Modules-
+		CustRegForm
+		EmpLogin
+		CustLoginForm(3 for 3 Steps)
+		CustLogin
+		CustDetails
+		CustAccRequest
+		EmpAccAccept
+		CustTransanction
+		EmpTransTable
+
+
+Customer-
+		Customer registers himself in 3 stpes.
+
+		Customer login with uname, pwd and i'mnot a robot.
+
+		Customer acc gets locked after 3 unsuccessful attempts.
+
+		Customer should be able to loggout.
+
+		Customer should be able to all his details, also last login.
+
+		Customer can request Emp to create acc.
+
+		Customer can only update email and mob.
+
+		Becomes Existing customer if he creates acc.
+
+		Should maintain min balnace always.
+
+
+All exceptions should be handled respectivly,unhandled exceptions to be logged.
+
+Transaction Table has transID (unique, auto gennrated) , has accNo as Forign key from Account Table.
+
+transId+accNo is joint primary key in Transaction Table.
+
+We need XML file for both customer and emp to login.
+
+Home Page- Cust SignUp and SignIn, Emp Login.
+
+Employee creates acc for customer by taking his required details from DB only after depositing min balance.
+
+After acc creation, customer can see other customers-accNo(drop down) to make transactions with them.
+

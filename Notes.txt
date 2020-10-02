@@ -62,4 +62,3 @@ Home Page- Cust SignUp and SignIn, Emp Login.
 Employee creates acc for customer by taking his required details from DB only after depositing min balance.
 
 After acc creation, customer can see other customers-accNo(drop down) to make transactions with them.
-

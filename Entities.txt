@@ -24,7 +24,7 @@ Entity-
         String balance;
         String minBalance;
    }
-   
+   /*
    class Transaction{
         String transId; // 12 digit
         String accId;
@@ -32,6 +32,6 @@ Entity-
         String timeStamp;
         String transType; // credit/debit
         String remarks; // status
-   }
+   }*/
     
 			

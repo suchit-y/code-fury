@@ -1,0 +1,13 @@
+Tables -
+
+		1.Customer - created by himself
+				custId is pk , cname, pan, dob, mob, email, amob, aemail,
+
+		2.Acc - created by emp
+				(custId, accId) is pk, openingDate, accType, balance, minBalance
+
+		3.Login - created by cust - after relogin 
+				custId as fk, uname is pk, pwd, lastlogin
+
+		4.Transactions- created by customers
+				(trId, AccId) is pk, amt, date, time ,type, remarks(as status)

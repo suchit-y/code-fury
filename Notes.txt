@@ -18,16 +18,18 @@ Tables -
 				(trId, AccNo) is pk, amt, date, time ,type, remarks(as status)
 
 
-Modules-
-		1.CustRegForm
-		2.EmpLogin
-		3.CustLoginForm(3 for 3 Steps)
-		4.CustLogin
-		5.CustDetails
-		6.CustAccRequest
-		7.EmpAccAccept
-		8.CustTransanction
-		9.EmpTransTable
+Modules- (UI)
+		1.CustRegForm(3 for 3 Steps) - Muskan		
+		2.CustLogin - Damodar	(directs to 2 pages options (buttons)- personal, transactions)	
+		3.CustPersonalDetails (View/Edit) (has button to see Transactions)- Piyush
+		4.CustTransTable (based on AccNo dropdown)  - Priya
+		5.EmpLogin - Shubhi
+		6.Open-Existing/NewAcc (by Employee) - Supriya
+		7.CustTransanction - Suchit
+		
+
+UI (In JSP, UI Has one nav,header,footer)-
+		
 
 Dao Layer - 
 		1.CustDao  (Interface - Method creation)
@@ -74,6 +76,8 @@ Customer-
 		Becomes Existing customer if he creates acc.
 
 		Should maintain min balanace always.
+		
+		
 
 All Validations done in JS.
 
@@ -90,4 +94,5 @@ Home Page- Cust SignUp and SignIn, Emp Login.
 Employee creates acc for customer by taking his required details from DB only after depositing min balance.
 
 After acc creation, customer can see other customers-accNo(drop down) to make transactions with them.
+
 

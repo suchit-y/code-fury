@@ -1,6 +1,6 @@
 Notes
 
-Bank Application
+Bank Application  - Error Knights
 
 RDBMS Database- Derby
 
@@ -26,8 +26,9 @@ Modules- (UI)
 		5.EmpLogin - Shubhi
 		6.Open-Existing/NewAcc (by Employee) - Supriya
 		7.CustTransanction - Suchit
-		
 
+
+	
 UI (In JSP, UI Has one nav,header,footer)-
 		
 

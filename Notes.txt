@@ -2,6 +2,7 @@ Notes
 
 Bank Application
 
+RDBMS Database- Derby
 
 Tables -
 		1.Customer - created by himself
@@ -28,6 +29,32 @@ Modules-
 		8.CustTransanction
 		9.EmpTransTable
 
+Dao Layer - 
+		1.CustDao  (Interface - Method creation)
+		2.AccDao
+		3.TransactionDao
+		4.CustDaoImpl   (Method Implementaion, all Impl's conected to DB)
+		5.AccDaoImpl
+		6.TransactionDaoImpl
+		
+
+Entity Layer (Has classes and variables with setters/getters)-
+		1.Customer
+		2.Account
+		3.Transaction
+
+		
+Service Layer (Medium b/w UI and DB)- 
+		1.CustAccRequest
+		2.EmpAccAccept
+		3.Transaction
+		
+Servlets-
+		1.Controller (Navigator for Classes)
+	
+	
+Working:	UI > Servlet > Service > DaoImpl > Dao > DaoImpl(DB)
+
 
 Customer-
 		Customer registers himself in 3 stpes.
@@ -48,6 +75,7 @@ Customer-
 
 		Should maintain min balanace always.
 
+All Validations done in JS.
 
 All exceptions should be handled respectivly,unhandled exceptions to be logged.
 
@@ -62,3 +90,4 @@ Home Page- Cust SignUp and SignIn, Emp Login.
 Employee creates acc for customer by taking his required details from DB only after depositing min balance.
 
 After acc creation, customer can see other customers-accNo(drop down) to make transactions with them.
+

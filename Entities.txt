@@ -1,0 +1,37 @@
+Classes
+  
+Entity-
+    class Customer{
+    	  String custId;
+        String custName;
+        String custAddress;
+        String mobile;
+        String email;
+        String altMobile;
+        String altEmail;
+        String pan;
+        String dob;
+        String uname;
+        String pwd;
+        String lastLogin;
+		}
+    
+   class Account{
+        String accId; //12 digit
+        String custId;
+        String openingDate;
+        String accType;
+        String balance;
+        String minBalance;
+   }
+   
+   class Transaction{
+        String transId; // 12 digit
+        String accId;
+        String amount;
+        String timeStamp;
+        String transType; // credit/debit
+        String remarks; // status
+   }
+    
+			

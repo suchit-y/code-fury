@@ -21,7 +21,7 @@ Tables -
 Modules- (UI)
 		1.CustRegForm(3 for 3 Steps) - Muskan		
 		2.CustLogin - Damodar	(directs to 2 pages options (buttons)- personal, transactions)	
-		3.CustPersonalDetails (View/Edit) (has button to see Transactions)- Piyush
+		3.CustPersonalDetails (View/Edit) - Piyush
 		4.CustTransTable (based on AccNo dropdown)  - Priya
 		5.EmpLogin - Shubhi
 		6.Open-Existing/NewAcc (by Employee) - Supriya

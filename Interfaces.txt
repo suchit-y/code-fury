@@ -1,0 +1,20 @@
+Interfaces
+
+Dao Layer
+
+    CustomerDao{
+        String accountRequest(String custId);
+        String customerRegister(Customer cust); 
+        String customerLogin(String uname, String pwd);
+        String viewProfile(String custId);
+        String doTransaction(String senderAccId, String receiverAccId, double amt);
+        String viewTransactions(String custId);
+    }
+    
+    EmployeeDao{
+        String checkAccount(String custId);  
+        String openAccount(String custId ,Account acc);
+    }
+    
+    
+    

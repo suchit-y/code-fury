@@ -4,20 +4,6 @@ Bank Application  - Error Knights
 
 RDBMS Database- Derby
 
-Tables -
-		1.Customer - created by himself
-				custId is pk , cname, pan, dob, pmob, pemail, amob, aemail,
-
-		2.Acc - created by emp
-				(custId, accNo) is pk, dateOfOpening, accType, balance, minBalance
-
-		3.Login - created by cust - after relogin 
-				custId as fk, uname is pk, pwd, lastlogin
-
-		4.Transactions- created by customers
-				(trId, AccNo) is pk, amt, date, time ,type, remarks(as status)
-
-
 Modules- (UI)
 		1.CustRegForm(3 for 3 Steps) - Muskan		
 		2.CustLogin - Damodar	(directs to 2 pages options (buttons)- personal, transactions)	
@@ -29,19 +15,15 @@ Modules- (UI)
 
 
 	
-UI (In JSP, UI Has one nav,header,footer)-
+UI (Done in JSP, UI Has one nav,header,footer)-
 		
 
 Dao Layer - 
 		1.CustDao  (Interface - Method creation)
-		2.AccDao
-		3.TransactionDao
-		4.EmployeeDao
-		5.CustDaoImpl   (Method Implementaion, all Impl's conected to DB)
-		6.AccDaoImpl
-		7.TransactionDaoImpl
-		8.EmployeeDaoImpl
-		
+		2.EmployeeDao
+		3.CustDaoImpl   (Method Implementaion, all Impl's conected to DB)
+		4.EmployeeDaoImpl
+				
 
 Entity Layer (Has classes and variables with setters/getters)-
 		1.Customer

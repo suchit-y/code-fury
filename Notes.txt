@@ -36,9 +36,11 @@ Dao Layer -
 		1.CustDao  (Interface - Method creation)
 		2.AccDao
 		3.TransactionDao
-		4.CustDaoImpl   (Method Implementaion, all Impl's conected to DB)
-		5.AccDaoImpl
-		6.TransactionDaoImpl
+		4.EmployeeDao
+		5.CustDaoImpl   (Method Implementaion, all Impl's conected to DB)
+		6.AccDaoImpl
+		7.TransactionDaoImpl
+		8.EmployeeDaoImpl
 		
 
 Entity Layer (Has classes and variables with setters/getters)-

@@ -11,3 +11,6 @@ Tables -
 
 		4.Transactions- created by customers
 				(trId, AccId) is pk, amt, date, time ,type, remarks(as status)
+				
+		5.EmpLogin - created by default initially with employees 
+				uname is pk, pwd, ename, lastlogin

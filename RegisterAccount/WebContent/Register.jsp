@@ -30,12 +30,12 @@ function validate()
      }
      if (acctype==null || acctype=="")
      { 
-     alert("Account type can't be blank"); 
+     alert('Account type cannot be blank'); 
      return false;
      }
      if (initdeposit==null || initdeposit=="")
      { 
-     alert("Initial Deposit can't be blank"); 
+     alert('Initial Deposit cannot be blank'); 
      return false; 
      }
      if (minbal==null || minbal=="")
@@ -60,7 +60,7 @@ function validate()
 </head>
 <body>
 <center><h2>Open Account Form  </h2></center>
-    <form name="form" action="AccountServlet" method="post">
+    <form name="form" action="AccountServlet" method="post" onclick="return validate()">
         <table align="center">
          <tr>
          <td>Customer Id</td>
@@ -96,12 +96,12 @@ function validate()
          </tr>
          <tr>
          <td></td>
-         <td><input type="submit" onclick="return validate();" value="Open Account"></input><br/ >
+         <td><input type="submit"  value="Open Account"></input><br/ >
          <input   type="reset" value="Reset"></input></td>
          </tr>
         </table>
-        
+        </form>
        
 
-</body>
+  </body>
 </html>
